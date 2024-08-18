@@ -1,0 +1,1092 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+#body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+}
+
+#header { 
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 13px;
+    background-color: lightblue;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+   z-index: 10;
+}
+
+#header img {
+    border-image: 0.1px;
+    box-shadow: 1px;
+    padding-left: 25px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 25px;
+    position: relative;
+}
+
+#close {
+    display: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: coral;
+    opacity: 0.7;
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: coral;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#mobile-some {
+    display: none;
+}
+
+main {
+    margin-top: 70px;
+}
+
+
+#hero {
+    background-image:url("IMG/fried\ chicken\ test.jpg");
+    size: 100%;
+    opacity: 1;
+    
+}
+
+#oss3 .container, #oss4 .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding: 30px 20px;
+    margin: 0;
+    height: 350px;
+}
+
+#oss3 img {
+    width: 100%;
+    height: 80%;
+    clip-path: ellipse(50% 35%);
+    position: relative;
+    z-index: 1;
+    margin: 0;
+
+}
+
+#oss4 img {
+    grid-column: 1 / 2; /* Ensure the image is in the first column */
+    width: 100%;
+    height: 80%;
+    clip-path: ellipse(50% 35%);
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+
+#oss3 h2 {
+    font-size: 24px;
+    font-style: normal;
+    z-index: 1;
+    margin: 0;
+}
+
+#oss4 h2 {
+    font-size: 24px;
+    font-style: normal;
+    z-index: 1;
+    margin: 0;
+}
+
+#oss4 .text-container {
+    grid-column: 2 / 3; /* Text and button in the second column */
+    display: flex;
+    flex-direction: column; /* Stack text and button vertically */
+    align-items: center; /* Align items to the start */
+}
+
+#oss4 button {
+    justify-self: start;
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+    margin: 25px;
+}
+
+#oss4 button:hover {
+    background-color: darkred;
+}
+
+#Våre-aksjoner h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    padding: 36px;
+}
+
+
+#about .container {
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    border: 0.5px solid black;
+    margin: 15px;
+    padding: 20px 20px;
+}
+
+#about {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about img {
+    max-width: 100%;
+    max-height: 350px;
+    padding: 25px;
+}
+
+  #some-knapp .fa {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #some-knapp .fa-instagram {
+    background-color: #e1306c;
+  }
+  
+  #some-knapp .fa-facebook {
+    background-color: #3b5998;
+  }
+  
+  #some-knapp .fa-linkedin {
+    background-color: #0077b5;
+  }
+  
+  #some-knapp .fa:hover {
+    opacity: 0.7;
+  }
+
+.center {
+    display: none;
+}
+
+#hero {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: url('charity.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p, section ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+.mission, .projects, .contact {
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    position: sticky;
+    
+    bottom: 0;
+    height: 10px;
+    flex-wrap: flex;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 10;
+}
+
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow h4 {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.follow a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.follow a:hover {
+    color: coral;
+}
+
+/* side for samarbeidspartnere */
+
+#Tusen-takk {
+    padding: 30px;
+}
+
+#Tusen-takk h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-top: 13px;
+}
+
+#sponsors {
+    padding: 35px 15px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#sponsors h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sponsor-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sponsor-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.sponsor-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sponsor-box p {
+    padding: 22px;
+    font-size: 18px;
+    color: #333;
+}
+
+.sponsor-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fa {
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+
+/* Side for kontakt */
+
+  #kontakt {
+    padding: 25px;
+}
+
+.kontakt .container {
+    text-align: center; /* Ensure the text aligns left */
+    padding: 25px; /* Adjust padding as needed */
+}
+
+#kontakt h2 {
+    font-size: 40px;
+}
+
+#kontakt p {
+    font-size: 25px;
+
+}
+
+.kontakt-tittel h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding-top: 30px;
+}
+
+
+/* Remove list style and ensure alignment */
+.kontakt ul {
+    list-style-type: none;
+    padding-left: 0; /* Remove default padding */
+}
+
+.kontakt li {
+    display: flex;
+    align-items: center; /* Vertically center the icon and text */
+    margin: 20px 10px; /* Adjust margin for spacing */
+    text-align: center;
+    justify-content: center;
+}
+
+.kontakt a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px; 
+    margin-left: 8px; 
+    align-items: center;
+}
+
+.kontakt i.fa-envelope {
+    color: black;
+    margin-right: 8px; 
+}
+
+.kontakt a:hover {
+    color: darkgray; 
+}
+
+.kontakt-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.kontakt-venstre {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.kontakt-venstre-tittel h2 {
+    font-weight: 600;
+    color: black;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.kontakt-venstre-tittel hr {
+    border: none;
+    width: 150px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.kontakt-input {
+    width: 400px;
+    height: 50px;
+    border: 1px black thin;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.kontakt-venstre textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.kontakt-container button {
+    justify-self: start;
+    padding: 10px 20px;
+    background-color: darkgray;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+    height: 40px;
+    color: white;
+}
+
+.kontakt-container button:hover {
+    background-color:  gray;
+}
+
+
+.kontakt-høyre-tittel {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 108px;
+}
+
+.kontakt-høyre-tittel h2 {
+    font-weight: 600;
+    color: black;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.kontakt-høyre-tittel hr {
+    border: none;
+    width: 150px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: start;
+}
+
+.kontakt-høyre-linker li {
+    margin: 50px 20px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.kontakt-høyre-linker li:last-child {
+    margin-bottom: 0;
+}
+
+.kontakt-høyre-linker hr {
+    border: none;
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.kontakt-høyre-linker a {
+    text-decoration: none;
+    color: black;
+    font-size: 32px; /* Adjust the font size as needed */
+    margin-left: 12px; /* Adjust margin between icon and text */
+    align-items: center;
+}
+
+/* Styling for the icon */
+.kontakt-høyre-linker i.fa-envelope {
+    color: black;
+    margin-right: 8px; /* Adjust spacing as needed */
+}
+
+/* Hover effects if needed */
+.kontakt-høyre-linker a:hover {
+    color: darkgray; /* Change to a desired color on hover */
+}
+
+.kontakt-høyre-some-knapp {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.kontakt-høyre-some-knapp .fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    margin: 25px 35px; /* Remove any existing margins to control spacing with flexbox */
+    border-radius: 50%; /* Make the circle perfectly round */
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+    line-height: 50px;
+}
+  
+  .kontakt-høyre-some-knapp .fa-instagram {
+    background-color: #e1306c;
+  }
+  
+  .kontakt-høyre-some-knapp .fa-facebook {
+    background-color: #3b5998;
+  }
+  
+  .kontakt-høyre-some-knapp .fa-linkedin {
+    background-color: #0077b5;
+  }
+  
+  .kontakt-høyre-some-knapp .fa:hover {
+    opacity: 0.7;
+  }
+
+
+
+
+@media (max-width: 768px) {
+    .sponsor-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #sponsors h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    #Tusen-takk h2 {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin-top: 13px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+        overflow-x: hidden;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+        margin: 5px 0;
+    }
+
+    #navbar.active {
+        right: 0px;
+        overflow: hidden;
+    }
+
+
+    #close {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+
+    }
+
+    
+    .hero h1 {
+        font-size: 48px;
+    }
+ 
+    section h2 {
+        font-size: 28px;
+    }
+
+    section p, section ul {
+        font-size: 16px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    
+    #mobile i{
+        color: black;
+        font-size: 30px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    #mobile.active {
+        display: none;
+    }
+
+  #mobile-some {
+    display: block;
+  }
+
+  #mobile-some {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 55px;
+    position: fixed;
+    padding-top: 100px;
+    padding-left: 60px;
+  }
+
+  #mobile-some a {
+    font-size: 50px;
+    margin-right: 35px;
+    color: blue;
+  }
+
+  /* hjemmeside */
+
+    .Ossbilde {
+        width: 100%;
+        height: auto;
+        margin: 10px 0px;
+    }
+
+    #oss3 h2, #oss4 h2 {
+        font-size: 18px;
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    #oss3 .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 5px;
+        margin: 0;
+      }
+
+      #oss4 .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 5px;
+        margin: 0;
+      }
+
+      #oss3 img {
+        order: 2; /* bilde etter text */
+        width: 100%;
+        height: auto;
+        clip-path: ellipse(50% 35%);
+        position: relative;
+        margin: 0;
+        padding: 0; 
+    }
+
+      #oss4 img {
+        order: 2; /* bilde etter text */
+        width: 100%;
+        height: auto;
+        clip-path: ellipse(50% 35%);
+        position: relative;
+        margin: 0;
+        padding: 0; 
+      }
+
+      #oss3 h2 {
+        order: 1; /* text før image */
+        margin-bottom: 0px;
+        padding: 0;
+      }
+
+      #oss4 h2 {
+        order: 1; /* text før image */
+        margin-bottom: 0px;
+        padding: 0;
+      }
+
+
+     /* Side for våre aksjoner */
+     
+      #våre-aksjoner {
+        margin-bottom: 0;
+    }
+
+    #våre-aksjoner h2 {
+        margin-bottom: 0;
+    }
+
+    .aksjoner-bilde {
+        padding: 20px;
+    }
+
+    #about {
+        align-items: center;
+        justify-content: center;
+    }
+
+        #about .container {
+            width: 85%; 
+            margin: 10px 0; /* Reduce margin for mobile */
+        }
+    
+        #about img {
+            padding: 0px; /* Adjust padding for mobile view */
+            size: 100%;
+            max-width: 90%;
+        }
+
+        #about h2 {
+            padding: 0;
+            margin: 0;
+        }
+
+
+    .follow {
+        display: none;
+    }
+
+    /* side for kontakt */
+
+    .kontakt-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #kontakt-venstre {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .kontakt-venstre-tittel h2 {
+        font-size: 24px;
+        margin-top:  20px;
+    }
+
+    .kontakt-input {
+        padding-left: 5px;
+    }
+
+    .kontakt-container button {
+        width: 200px;
+        margin-bottom: 40px;
+    }
+
+    .kontakt-høyre {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .kontakt-høyre-tittel {
+        align-items: center; 
+        margin-bottom: 0;
+    }
+
+    .kontakt-høyre-tittel h2 {
+        text-align: center; /* Center the text */
+        font-size: 26px;
+    }
+
+    .kontakt-høyre-tittel hr {
+        width: 250px; /* Keep the width same */
+         
+    }
+
+    .kontakt-høyre-linker hr {
+        display: none;
+    }
+
+    .kontakt-venstre .kontakt-input {
+        width: 300px;
+       
+    }
+
+    .kontakt-venstre textarea {
+        width: 300px;       
+    }
+
+    .kontakt-høyre-linker li {
+        margin: 30px 20px;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    .kontakt-høyre-linker a {
+        margin: 25px 15px;
+        font-size: 22px;
+    }
+
+ 
+
+    .kontakt-høyre-linker li {
+        margin: 20px 5px;
+        font-size: 22px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+    }
+
+
+    .kontakt-høyre-some-knapp .fa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%; /* Make the circle perfectly round */
+        color: white;
+        font-size: 24px;
+        transition: background-color 0.3s ease;
+        line-height: 40px;
+        margin: 25px 20px;
+    }
+
+    footer {
+        position: fixed;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease; 
+        overflow-x: hidden;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+        margin: 0px 0;
+    }
+
+    #navbar.active {
+        right: 0px;
+        overflow: hidden;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    #about.container {
+        margin-bottom: 5px;
+    }
+
+    .kontakt h2 {
+        font-size: 24px; 
+        margin-bottom: 20px; 
+      }
+      
+      .kontakt p {
+        font-size: 14px; 
+        margin-bottom: 10px; 
+      }
+
+      .kontakt.container {
+        margin-top: 5px;
+      }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p, section ul {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    
+    #mobile i{
+        color: black;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #mobile-some {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        bottom: 35px;
+        position: fixed;
+        padding-top: 100px;
+        padding-left: 25px;
+      }
+    
+      #mobile-some a {
+        font-size: 40px;
+        margin-right: 25px;
+        color: blue;
+      }
+
+    .fa {
+        display: none;
+    }
+
+    #oss3 .container, #oss4 .container {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+
+    #oss3 h2, #oss4 h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #oss4 button {
+        order: 3;
+        margin: 20px;
+        border-radius: 35px;
+    }
+
+    .follow {
+        display: none;
+    }
+
+    #footer {
+        position: fixed;
+    }
+}
+
+#close i {
+    color: #222;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+}
+
+
